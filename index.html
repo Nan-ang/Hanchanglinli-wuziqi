@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gomoku Online</title>
+  </head>
+  <body>
+    <h1>五子棋在线对战</h1>
+    <div id="game-container">
+      <canvas id="chessboard" width="640" height="640"></canvas>
+      <div id="game-info">
+        <p id="status-text">等待玩家连接...</p>
+        <button id="restart-button">重新开始</button>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
