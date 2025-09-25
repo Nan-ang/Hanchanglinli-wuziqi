@@ -8,10 +8,23 @@
   </head>
   <body>
     <h1>五子棋在线对战</h1>
+
+    <div id="room-section">
+      <div id="create-room-div">
+        <span>你的房间号是: </span>
+        <strong id="room-id-display">...</strong>
+        <p>把这个号码分享给你的朋友！</p>
+      </div>
+      <div id="join-room-div">
+        <input type="text" id="room-id-input" placeholder="输入朋友的房间号" />
+        <button id="join-button">加入房间</button>
+      </div>
+    </div>
+
     <div id="game-container">
-      <canvas id="chessboard" width="640" height="640"></canvas>
+      <canvas id="chessboard"></canvas>
       <div id="game-info">
-        <p id="status-text">等待玩家连接...</p>
+        <p id="status-text">请先创建或加入一个房间</p>
         <button id="restart-button">重新开始</button>
       </div>
     </div>
